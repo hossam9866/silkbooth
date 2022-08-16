@@ -1,0 +1,253 @@
+body {
+  background-color: #f7e8dd;
+}
+#nav {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 153px;
+  height: 70px;
+}
+.mail {
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mail :hover,
+.mail a span:hover {
+  text-decoration: none;
+}
+
+.mail a {
+  padding: 14px 12px;
+  background: #f5f5f5;
+  border: solid 1px #f5f5f5;
+  border-radius: 7px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #242424;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.mail a span {
+  margin-left: 8px;
+  color: #242424;
+}
+.mail a i {
+  color: #eed2bb;
+}
+.main-container {
+  width: 95%;
+  background-color: white;
+  margin: 0 auto;
+  padding: 70px;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  box-shadow: 5px 20px 30px #acacac8a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.line {
+  width: 60px;
+  border-top: 2px solid #eed2bb;
+  margin-bottom: 2px;
+  display: inline-block;
+}
+.coming {
+  margin: 20px 0 20px 8px;
+  color: #eed2bb;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 3.76px;
+}
+.marked {
+  background-color: #eed2bb;
+}
+.left-section {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.left-section-content {
+}
+.left-section h2 {
+  color: #1f1f1f;
+  font-size: 67px;
+  letter-spacing: -1.36px;
+  font-weight: 900;
+  margin: 15px 0 0 0 !important;
+}
+.left-section p {
+  color: #737373;
+  font-size: 14px;
+  max-width: 455px;
+  margin-top: 25px;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right-section img {
+  width: 80%;
+}
+.right-section p {
+  font-size: 12px;
+  color: #737373;
+  margin-top: 25px;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+.social {
+  margin-top: 20px;
+}
+.social i {
+  margin-bottom: 0px;
+  color: #737373;
+  font-size: 22px;
+  border: solid 1px #ebebeb;
+  width: 58px;
+  height: 58px;
+  padding: 18px 0 0px 18px;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+.social i:hover {
+  color: #d49861;
+  text-decoration: none;
+  border-color: #d49861;
+}
+.social a:hover {
+  text-decoration: none;
+}
+.fa-facebook {
+  padding: 18px 0 0px 22px !important;
+}
+.copy-right {
+  color: #71659c;
+  font-size: 10px;
+  margin-top: 20px;
+  letter-spacing: 0.28px;
+  margin-bottom: -30px;
+}
+.mobile {
+  display: none;
+}
+.not-mobile {
+  display: block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+span {
+  font-family: "Poppins";
+}
+p,
+a,
+i {
+  font-family: "Montserrat";
+}
+
+@media (max-width: 1438px) and (min-width: 1024px) {
+  .left-section h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 1070px) and (min-width: 991px) {
+  .left-section h2 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 991px) {
+  .mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .not-mobile {
+    display: none;
+  }
+  .main-container {
+    position: static;
+    transform: translate(0, 0);
+    top: 0;
+    left: 0;
+    margin: 20px auto;
+  }
+}
+@media (max-width: 733px) {
+  .left-section h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 583px) {
+  .main-container {
+    width: 98%;
+  }
+  .left-section h2 {
+    font-size: 45px;
+  }
+  .main-container {
+    padding: 20px 20px 40px 20px;
+  }
+}
+@media (max-width: 490px) {
+  .main-container {
+    width: 98%;
+  }
+  .left-section h2 {
+    font-size: 40px;
+  }
+  .logo img {
+    width: 120px;
+    height: 54px;
+  }
+  .mail a {
+    font-size: 12px;
+  }
+}
+@media (max-width: 377px) {
+  .left-section h2 {
+    font-size: 35px;
+  }
+  .mail a {
+    font-size: 10px;
+  }
+  .social i {
+    font-size: 18px;
+    border: solid 1px #ebebeb;
+    width: 38px;
+    height: 38px;
+    padding: 10px 0 0px 10px;
+    border-radius: 50%;
+    margin-right: 14px;
+  }
+  .fa-facebook {
+    padding: 10px 0 0px 14px !important;
+  }
+}
+@media (max-width: 327px) {
+  .left-section h2 {
+    font-size: 27px;
+  }
+  .mail a {
+    font-size: 8px;
+  }
+  .coming {
+    font-size: 15px;
+  }
+}

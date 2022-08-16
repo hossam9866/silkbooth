@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Landing Page - SilkBooth</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Poppins"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <meta
+      name="description"
+      content="silkbooth is coming soon, All women needs
+            in one place!, More than 1000+ products to pamper yourself
+            Pick product, Click purchase, Trrrn… and it’s at your doorstep!"
+    />
+
+    <meta
+      property="og:description"
+      content="silkbooth is coming soon, All women needs
+            in one place!, More than 1000+ products to pamper yourself
+            Pick product, Click purchase, Trrrn… and it’s at your doorstep!"
+    />
+    <meta property="og:image" content="/assets/Hue_Saturation 3.png" />
+    <meta property="og:site_name" content="SilkBooth" />
+    <meta property="og:title" content="Landing Page - SilkBooth" />
+    <meta property="og:type" content="website" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="SilkBooth" />
+    <meta name="twitter:creator" content="SilkBooth" />
+    <meta name="twitter:title" content="Landing Page - SilkBooth" />
+    <meta
+      name="twitter:description"
+      content="silkbooth is coming soon, All women needs
+            in one place!, More than 1000+ products to pamper yourself
+            Pick product, Click purchase, Trrrn… and it’s at your doorstep!"
+    />
+    <meta name="twitter:image" content="/assets/Hue_Saturation 3.png" />
+    <link rel="shortcut icon" href="/assets/icon.jpg" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+      window.onload = () => {
+        if (screen.width > 991) {
+          let rightSectionHeight =
+            document.querySelector(".right-section").offsetHeight;
+          document.querySelector(
+            ".left-section"
+          ).style.height = `${rightSectionHeight}px`;
+        }
+        addEventListener("resize", (event) => {
+          if (screen.width > 991) {
+            let rightSectionHeight =
+              document.querySelector(".right-section").offsetHeight;
+            document.querySelector(
+              ".left-section"
+            ).style.height = `${rightSectionHeight}px`;
+          } else {
+            document.querySelector(".right-section").offsetHeight;
+            document.querySelector(".left-section").style.height = "auto";
+          }
+        });
+      };
+    </script>
+  </head>
+  <body>
+    <div class="main-container">
+      <div id="nav" class="row">
+        <div class="logo col col-lg-6 col-md-6 col-sm-6 col-xs-6">
+          <img src="/assets/silkbooth logo-01.jpg" />
+        </div>
+        <div class="col col-lg-6 col-md-6 col-sm-6 col-xs-6 mail">
+          <a href="mailto:info@silkbooth.com">
+            <i class="fa fa-envelope"></i>
+            <span>info@silkbooth.com</span>
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="left-section col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <div></div>
+          <div class="left-section-content">
+            <div class="line"></div>
+            <span class="coming">Coming Soon!</span>
+            <h2>All women needs</h2>
+            <h2>in <span class="marked">one place!</span></h2>
+            <p>
+              More than 1000+ products to pamper yourself <br />Pick product,
+              Click purchase, Trrrn… and it’s at your doorstep!
+            </p>
+          </div>
+          <div class="not-mobile">
+            <div class="social">
+              <a href="#">
+                <i class="fa fa-linkedin-square"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#">
+                <i class="fa fa-instagram"></i>
+              </a>
+            </div>
+            <div class="copy-right">
+              SILKBOOTH &#169; 2022 ALL RIGHTS RESERVED.
+            </div>
+          </div>
+        </div>
+        <div class="right-section col col-lg-6 col-md-6 col-sm-12 col-xs-12">
+          <img src="/assets/Hue_Saturation 3.png" />
+          <p style="">
+            The BEAUTY Platform that will never let you down!<br />Stay tuned!
+            And don’t miss our unique shopping experience.
+          </p>
+        </div>
+      </div>
+      <div class="mobile">
+        <div class="social">
+          <a href="#">
+            <i class="fa fa-linkedin-square"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i class="fa fa-instagram"></i>
+          </a>
+        </div>
+        <div class="copy-right">SILKBOOTH &#169; 2022 ALL RIGHTS RESERVED.</div>
+      </div>
+    </div>
+  </body>
+</html>
